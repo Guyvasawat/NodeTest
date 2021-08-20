@@ -71,9 +71,9 @@ app.get('/', (req, res) => {
 
 app.post('/home',upload.single('fileupload'),(req,res) => {
     const files = req.file;
-    console.log(files);
-    const des = req.body.description;
-    res.render('home',req.file)
+    //console.log(files.path);
+   //const des = req.body.description;
+    res.render('show',req.file)
 })
 
 /////////////////upload//////////////////

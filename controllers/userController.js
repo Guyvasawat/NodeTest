@@ -144,7 +144,7 @@ exports.resetpassword = async (req, res, next) => {
             }
             else{
                 res.render("resetpassword", {
-                    error: 'พาสเวิดไม่เหมือนกัน'
+                    error: 'Your password and confirmation password do not match.'
                 });
                 return;
             }
