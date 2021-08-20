@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+<div class="container">
+    <div class="page-header">
+        <h1>Upload File</h1>
+        <hr>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form method="post" action="/home" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="firstname">Upload</label>
+            <input type="file" class="form-control" name="fileupload" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-primary">Reset</button>
+        </form>
+      </div>
+    </div>
+
+    
+
+    <div class="profile">
+        <a href="/logout">Log Out</a>
+    </div>
+</div>
+<%- include('footer'); -%>
